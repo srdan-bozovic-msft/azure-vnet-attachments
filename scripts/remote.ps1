@@ -1,4 +1,6 @@
-﻿param([Parameter(Mandatory=$true)][String]$subscriptionId, [Parameter(Mandatory=$true)][String]$resourceGroupName, [Parameter(Mandatory=$true)][String]$virtualNetworkName)
+﻿$subscriptionId = $args[0]
+$resourceGroupName = $args[1]
+$virtualNetworkName= $args[2]
 
 function Ensure-Login () 
 {
